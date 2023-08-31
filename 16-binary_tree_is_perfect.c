@@ -2,11 +2,8 @@
 
 /**
  * binary_tree_is_perfect - checks if a binary tree is perfect
- * @tree: a pointer to the root node of the tree to check
- *
- * Return: 1 if the tree is perfect
- *         0 if the tree is not perfect
- *         0 if tree is NULL
+ * @tree: tree to check
+ * Return: 1 if perfect, 0 if not or NULL
  */
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
@@ -28,10 +25,10 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 }
 
 /**
- *_pow_recursion - returns the value of x raised to the power of y
- *@x: the value to exponentiate
- *@y: the power to raise x to
- *Return: x to the power of y, or -1 if y is negative
+ * _pow_recursion - returns the value of x raised to the power of y
+ * @x: number to be raised
+ * @y: power
+ * Return: x raised to the power of y / -1 if y is lower than 0
  */
 
 int _pow_recursion(int x, int y)
@@ -48,9 +45,7 @@ int _pow_recursion(int x, int y)
 /**
  * binary_tree_size - measures the size of a binary tree
  * @tree: tree to measure the size of
- *
- * Return: size of the tree
- *         0 if tree is NULL
+ * Return: size of the tree / 0 if tree is NULL
  */
 size_t binary_tree_size(const binary_tree_t *tree)
 {
@@ -63,7 +58,7 @@ size_t binary_tree_size(const binary_tree_t *tree)
 /**
  * binary_tree_height - measures the height of a binary tree
  * @tree: tree to measure the height of
- * Return: height of the tree / 0 if tree is NULL / 0 if tree is a leaf node / 0 if tree is root node with no children
+ * Return: height of the tree / 0 if tree is NULL
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
